@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">rentify</string>
+    <string name="underline_register_text"><u>Register here!</u></string>
+    <string name="underline_login_text"><u>Login here!</u></string>
+
+    <string name="payment">Selected Peyment Method:</string>
+    <string-array name="paymentMethod">
+        <item>Debit</item>
+        <item>Visa</item>
+    </string-array>
+
+    <string name="time_stamp">Selected time stamp:</string>
+    <string-array name="timeStamp">
+        <item>Day</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+
+    <string name="category">Selected category:</string>
+    <string-array name="Category">
+        <item>Accessories</item>
+        <item>Baby</item>
+        <item>Books</item>
+        <item>Decoration</item>
+        <item>Electronic</item>
+        <item>Fashion</item>
+        <item>Furniture</item>
+        <item>Gadget</item>
+        <item>Kitchenware</item>
+        <item>Sport</item>
+        <item>Tools</item>
+        <item>Toys</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

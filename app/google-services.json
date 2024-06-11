@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "340861098669",
+    "project_id": "rentify-143e7",
+    "storage_bucket": "rentify-143e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340861098669:android:1f148ccbb414e8d3a38424",
+        "android_client_info": {
+          "package_name": "com.example.rentify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340861098669-bttbervhhat26kps4iet51h8625b0hig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rentify",
+            "certificate_hash": "4c937b7432859fca8a85c40af9c68fdbbae7cf55"
+          }
+        },
+        {
+          "client_id": "340861098669-eu5e3p3dcm35u7lifrd2pupntvn3uemc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rentify",
+            "certificate_hash": "715b7ebec7e51c49111d8b7c3d248a6221061182"
+          }
+        },
+        {
+          "client_id": "340861098669-f2sk5gm564ifpcfj9lh494jvn858j9sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLPHfQl-K_cG_lwOKBhIZx_WVjuJwYWfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340861098669-f2sk5gm564ifpcfj9lh494jvn858j9sb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

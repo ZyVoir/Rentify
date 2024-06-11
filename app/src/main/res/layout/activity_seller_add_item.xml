@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".navigation_bar.seller.seller_add_item">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar_home_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/back_button_logo_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Item"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Item image"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp">
+                    <ImageButton
+                        android:id="@+id/add_item_image"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:background="@drawable/text_box"
+                        android:src="@drawable/add_pic" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Item name"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/add_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_box"
+                    android:hint="Enter item name here ..."
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/add_item_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_box"
+                    android:hint="Describe your item here..."
+                    android:lineSpacingExtra="5dp"
+                    android:padding="10dp"
+                    android:gravity="top"
+                    android:maxLines="5"
+                    android:lines="5"
+                    android:scrollbars="vertical"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Category"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <Spinner
+                        android:id="@+id/spinner_category"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/timeStamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Time Stamp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <Spinner
+                        android:id="@+id/spinner_timeStamp"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Rp.  "
+                        android:textSize="18dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_item_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_box"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:padding="10dp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/done_buttom"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="65dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="DONE"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

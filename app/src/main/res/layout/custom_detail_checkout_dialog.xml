@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    android:background="@drawable/text_box">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Are you sure to check out this item?"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Item Name : "
+                    android:textColor="#2B2B2B"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/item_name_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Meja kayu / Meja belajar"
+                    android:textColor="#2B2B2B"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Rent Duration : "
+                    android:textColor="#2B2B2B"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/rent_duration_editText"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/text_box"
+                    android:hint="-"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/time_stamp_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="8dp"
+                    android:text="Month"
+                    android:textColor="#2B2B2B"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Total Price : "
+                    android:textColor="#2B2B2B"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/totalPrice_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Rp. 100.000"
+                    android:imeOptions="actionDone"
+                    android:textColor="#2B2B2B"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/checkoutBtn_NO"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue"
+                    android:textColor="@color/white"
+                    android:text="NO"
+                    />
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"/>
+
+                <Button
+                    android:id="@+id/checkoutBtn_YES"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
+                    android:text="YES"/>
+
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

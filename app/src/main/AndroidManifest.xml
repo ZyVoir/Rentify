@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/rentify_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rentify"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}"/>
+        <activity
+            android:name=".navigation_bar.profile_folder.edit_profile_page"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.seller.seller_add_item"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.seller.seller_item_list"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.chat_list_page"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.transaction_folder.map_page"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.home_folder.detail_page"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.home_folder.cart_page"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.chat_page"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.profile_folder.profile_page"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.transaction_folder.transaction_page"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.home_folder.home_page"
+            android:exported="false" />
+        <activity
+            android:name=".navigation_bar.bottom_navigation_bar"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".authPages.register_page"
+            android:exported="false" />
+        <activity
+            android:name=".authPages.login_page"
+            android:exported="false" />
+        <activity
+            android:name=".authPages.opening"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

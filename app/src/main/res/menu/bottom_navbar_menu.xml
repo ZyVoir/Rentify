@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_nav"
+        android:icon="@drawable/home_logo"
+        app:cnb_iconColor="#CC000000"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconTintMode="src_atop"
+        app:cnb_textColor="#CC222222"
+        android:title="Home">
+
+    </item>
+
+    <item
+        android:id="@+id/transaction_nav"
+        android:icon="@drawable/notification_logo"
+        app:cnb_iconColor="#CC000000"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconTintMode="src_atop"
+        app:cnb_textColor="#CC000000"
+        android:title="Transaction">
+
+    </item>
+    <item
+        android:id="@+id/profile_nav"
+        android:icon="@drawable/profile_logo"
+        app:cnb_iconColor="#CC000000"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconTintMode="src_atop"
+        app:cnb_textColor="#CC000000"
+        android:title="Profile">
+    </item>
+</menu>

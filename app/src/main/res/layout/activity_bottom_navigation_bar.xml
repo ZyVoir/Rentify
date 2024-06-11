@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".navigation_bar.bottom_navigation_bar">
+
+    <FrameLayout
+        android:id="@+id/frame_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/navBar_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:elevation="5dp"
+            android:translationZ="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="20dp"
+            app:cardCornerRadius="20dp">
+
+            <com.ismaeldivita.chipnavigation.ChipNavigationBar
+                android:id="@+id/bot_NavBar"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                app:cnb_iconSize="30dp"
+                android:background="@color/white"
+                app:cnb_unselectedColor="#96464646"
+                app:cnb_menuResource="@menu/bottom_navbar_menu">
+
+            </com.ismaeldivita.chipnavigation.ChipNavigationBar>
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</RelativeLayout>

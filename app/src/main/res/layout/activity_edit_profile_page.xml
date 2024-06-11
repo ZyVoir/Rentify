@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation_bar.profile_folder.edit_profile_page">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar_edit_profile_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/back_button_logo_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Edit Profile"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_edit_profile_page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/TextPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile Picture"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop">
+                <ImageButton
+                    android:id="@+id/Profile_picture"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/text_box"
+                    android:src="@drawable/add_pic" />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/TextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Molly123@gmail.com"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/TextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/email_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Molly123@gmail.com"
+                android:textColor="#8E8E8E"
+                android:focusable="false"
+                android:enabled="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/TextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Phone_Number_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:inputType="number"
+                android:hint="+62 xxx xxxx xxxx"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Street"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Street_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_box"
+                android:hint="Jl.  Dawn Winery No.1 Rt 01 / Rw 01"
+                android:lineSpacingExtra="5dp"
+                android:padding="10dp"
+                android:gravity="top"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/CityText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="City"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/city_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Jakarta Barat"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/ProvinceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Province"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/province_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Jakarta"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/countrText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Country"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/countryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="Indonesia"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/postCodeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Postcode"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/postCode_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_box"
+                android:hint="10234"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/TextPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Payment Method"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_box"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+                <Spinner
+                    android:id="@+id/spinner_payment_method"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/save_button_edit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/radius_10_border"
+                android:backgroundTint="@color/white"
+                android:text="Save"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

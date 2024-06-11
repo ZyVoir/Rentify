@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".navigation_bar.profile_folder.profile_page">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+    </ImageView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar_profile_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/edit_profile_icon"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/edit_icon"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dp"
+            android:textAllCaps="false" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/image_profile"
+                android:layout_width="131dp"
+                android:layout_height="133dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/guest_profile" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/UserName_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Christ Jogun">
+        </TextView>
+
+        <TextView
+            android:id="@+id/UserEmail_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Jogun@gmail.com">
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Phone Number"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/Phone_Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_box"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:hint="N/A"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_box"
+                    android:focusable="false"
+                    android:hint="N/A"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Payment Method"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/payment_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_box"
+                    android:focusable="false"
+                    android:hint="N/A"
+                    android:padding="10dp"/>
+
+                <Button
+                    android:id="@+id/log_out_button"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="65dp"
+                    android:background="@drawable/radius_10_border"
+                    android:backgroundTint="@color/white"
+                    android:text="Log Out"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
