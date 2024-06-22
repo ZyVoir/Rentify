@@ -1,6 +1,12 @@
 ## Rentify
 
-Project submission for Mobile Community Solution
+Rent Your Everyday Needs 
+
+Build using : 
+- Kotlin
+- SQLite
+- Firebase
+- Google Cloud Console (GMaps API)
 
 Members:
 * 2602104945 - Kalyana Mitta
