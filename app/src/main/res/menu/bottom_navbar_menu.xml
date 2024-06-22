@@ -14,7 +14,7 @@
 
     <item
         android:id="@+id/transaction_nav"
-        android:icon="@drawable/notification_logo"
+        android:icon="@drawable/transaction_icon"
         app:cnb_iconColor="#CC000000"
         app:cnb_backgroundColor="@color/white"
         app:cnb_iconTintMode="src_atop"
